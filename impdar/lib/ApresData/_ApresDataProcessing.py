@@ -168,8 +168,9 @@ def phase_uncertainty(self,bed_range):
             self.Rcoarse,
             self.header.chirp_grad,
             self.header.ci)
-
-    return phase_uncertainty, r_uncertainty
+    self.uncertainty = phase_uncertainty[0][0]
+    self.r_uncertainty = r_uncertainty[0][0]
+     
 
 
 def phase2range(phi,lambdac,rc=None,K=None,ci=None):
