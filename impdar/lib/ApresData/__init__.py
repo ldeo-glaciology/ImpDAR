@@ -64,7 +64,7 @@ class ApresData(object):
                       'battery_voltage',
                       'Rcoarse']
 
-    from ._ApresDataProcessing import apres_range, phase_uncertainty, phase2range, range_diff, stacking
+    from ._ApresDataProcessing import apres_range, phase_uncertainty, phase2range, range_diff, stacking, print_header, print_data_summary
     from ._ApresDataSaving import save
 
     # Now make some load/save methods that will work with the matlab format

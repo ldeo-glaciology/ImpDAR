@@ -20,6 +20,21 @@ Sept 23 2019
 
 import numpy as np
 
+def print_header(self):
+    """ Convenience method for quickly displaying the header. Copied from a tutorial jupyter notebook. """
+    
+    print('### File Header ###: \n\n')
+    for arg in vars(self.header):
+        if arg != 'header_string':
+            print(arg,': ', vars(self.header)[arg])
+
+
+def print_data_summary(self):       
+    """ Convenience method for quickly displaying the data. Copied from a tutorial jupyter notebook. """
+    print('\n\n\n\n\n\n ### File Data ###: \n\n')
+    for arg in vars(self):
+        print(arg,': ', vars(self)[arg])
+
 def apres_range(self,p,max_range=4000,winfun='blackman'):
     """
     Range conversion.
